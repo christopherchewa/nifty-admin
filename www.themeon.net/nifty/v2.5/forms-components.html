@@ -1,0 +1,3026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.themeon.net/nifty/v2.5/forms-components.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Jul 2016 13:44:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form Elements | Nifty - Admin Template</title>
+
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+    <!--Open Sans Font [ OPTIONAL ]-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="css/nifty.min.css" rel="stylesheet">
+
+
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="css/demo/nifty-demo.min.css" rel="stylesheet">
+
+
+        
+    <!--Switchery [ OPTIONAL ]-->
+    <link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Tags Input [ OPTIONAL ]-->
+    <link href="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.css" rel="stylesheet">
+
+
+    <!--Chosen [ OPTIONAL ]-->
+    <link href="plugins/chosen/chosen.min.css" rel="stylesheet">
+
+
+    <!--noUiSlider [ OPTIONAL ]-->
+    <link href="plugins/noUiSlider/nouislider.min.css" rel="stylesheet">
+
+
+    <!--Select2 [ OPTIONAL ]-->
+    <link href="plugins/select2/css/select2.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Timepicker [ OPTIONAL ]-->
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Datepicker [ OPTIONAL ]-->
+    <link href="plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+
+
+
+
+
+    
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="plugins/pace/pace.min.css" rel="stylesheet">
+    <script src="plugins/pace/pace.min.js"></script>
+
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="js/nifty.min.js"></script>
+
+
+
+
+
+
+    <!--=================================================-->
+    
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="js/demo/nifty-demo.min.js"></script>
+
+    
+    <!--Switchery [ OPTIONAL ]-->
+    <script src="plugins/switchery/switchery.min.js"></script>
+
+
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+
+
+    <!--Bootstrap Tags Input [ OPTIONAL ]-->
+    <script src="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+
+    <!--Chosen [ OPTIONAL ]-->
+    <script src="plugins/chosen/chosen.jquery.min.js"></script>
+
+
+    <!--noUiSlider [ OPTIONAL ]-->
+    <script src="plugins/noUiSlider/nouislider.min.js"></script>
+
+
+    <!--Select2 [ OPTIONAL ]-->
+    <script src="plugins/select2/js/select2.min.js"></script>
+
+
+    <!--Bootstrap Timepicker [ OPTIONAL ]-->
+    <script src="plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+
+
+    <!--Bootstrap Datepicker [ OPTIONAL ]-->
+    <script src="plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+
+    <!--Form Component [ SAMPLE ]-->
+    <script src="js/demo/form-component.js"></script>
+
+
+
+
+    
+    <!--=================================================
+
+    REQUIRED
+    You must include this in your project.
+
+
+    RECOMMENDED
+    This category must be included but you may modify which plugins or components which should be included in your project.
+
+
+    OPTIONAL
+    Optional plugins. You may choose whether to include it in your project or not.
+
+
+    DEMONSTRATION
+    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+
+    SAMPLE
+    Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+    Detailed information and more samples can be found in the document.
+
+    =================================================-->
+        
+
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+<body>
+    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+        
+        <!--NAVBAR-->
+        <!--===================================================-->
+        <header id="navbar">
+            <div id="navbar-container" class="boxed">
+
+                <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
+                        <div class="brand-title">
+                            <span class="brand-text">Nifty</span>
+                        </div>
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+
+
+                <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content clearfix">
+                    <ul class="nav navbar-top-links pull-left">
+
+                        <!--Navigation toogle button-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="demo-pli-view-list"></i>
+                            </a>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Navigation toogle button-->
+
+
+
+                        <!--Notification dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                <i class="demo-pli-bell"></i>
+                                <span class="badge badge-header badge-danger"></span>
+                            </a>
+
+                            <!--Notification dropdown menu-->
+                            <div class="dropdown-menu dropdown-menu-md">
+                                <div class="pad-all bord-btm">
+                                    <p class="text-semibold text-main mar-no">You have 9 notifications.</p>
+                                </div>
+                                <div class="nano scrollable">
+                                    <div class="nano-content">
+                                        <ul class="head-list">
+
+                                            <!-- Dropdown list-->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="clearfix">
+                                                        <p class="pull-left">Database Repair</p>
+                                                        <p class="pull-right">70%</p>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+                                                        <div style="width: 70%;" class="progress-bar">
+                                                            <span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <!-- Dropdown list-->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="clearfix">
+                                                        <p class="pull-left">Upgrade Progress</p>
+                                                        <p class="pull-right">10%</p>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+                                                        <div style="width: 10%;" class="progress-bar progress-bar-warning">
+                                                            <span class="sr-only">10% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <!-- Dropdown list-->
+                                            <li>
+                                                <a class="media" href="#">
+                                            <span class="badge badge-success pull-right">90%</span>
+                                                    <div class="media-left">
+                                                        <i class="demo-pli-data-settings icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="text-nowrap">HDD is full</div>
+                                                        <small class="text-muted">50 minutes ago</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <!-- Dropdown list-->
+                                            <li>
+                                                <a class="media" href="#">
+                                                    <div class="media-left">
+                                                        <i class="demo-pli-file-edit icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="text-nowrap">Write a news article</div>
+                                                        <small class="text-muted">Last Update 8 hours ago</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <!-- Dropdown list-->
+                                            <li>
+                                                <a class="media" href="#">
+                                            <span class="label label-danger pull-right">New</span>
+                                                    <div class="media-left">
+                                                        <i class="demo-pli-speech-bubble-7 icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="text-nowrap">Comment Sorting</div>
+                                                        <small class="text-muted">Last Update 8 hours ago</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <!-- Dropdown list-->
+                                            <li>
+                                                <a class="media" href="#">
+                                                    <div class="media-left">
+                                                        <i class="demo-pli-add-user-plus-star icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="text-nowrap">New User Registered</div>
+                                                        <small class="text-muted">4 minutes ago</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <!-- Dropdown list-->
+                                            <li class="bg-gray">
+                                                <a class="media" href="#">
+                                                    <div class="media-left">
+                                                        <img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/9.png">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="text-nowrap">Lucy sent you a message</div>
+                                                        <small class="text-muted">30 minutes ago</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <!-- Dropdown list-->
+                                            <li class="bg-gray">
+                                                <a class="media" href="#">
+                                                    <div class="media-left">
+                                                        <img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/3.png">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="text-nowrap">Jackson sent you a message</div>
+                                                        <small class="text-muted">40 minutes ago</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--Dropdown footer-->
+                                <div class="pad-all bord-top">
+                                    <a href="#" class="btn-link text-dark box-block">
+                                        <i class="fa fa-angle-right fa-lg pull-right"></i>Show All Notifications
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End notifications dropdown-->
+
+
+
+                        <!--Mega dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="mega-dropdown">
+                            <a href="#" class="mega-dropdown-toggle">
+                                <i class="demo-pli-layout-grid"></i>
+                            </a>
+                            <div class="dropdown-menu mega-dropdown-menu">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-3">
+
+                                        <!--Mega menu list-->
+                                        <ul class="list-unstyled">
+									        <li class="dropdown-header"><i class="demo-pli-file icon-fw"></i> Pages</li>
+									        <li><a href="#">Profile</a></li>
+									        <li><a href="#">Search Result</a></li>
+									        <li><a href="#">FAQ</a></li>
+									        <li><a href="#">Sreen Lock</a></li>
+									        <li><a href="#" class="disabled">Disabled</a></li>                                        </ul>
+
+                                    </div>
+                                    <div class="col-sm-4 col-md-3">
+
+                                        <!--Mega menu list-->
+                                        <ul class="list-unstyled">
+									        <li class="dropdown-header"><i class="demo-pli-mail icon-fw"></i> Mailbox</li>
+									        <li><a href="#"><span class="pull-right label label-danger">Hot</span>Indox</a></li>
+									        <li><a href="#">Read Message</a></li>
+									        <li><a href="#">Compose</a></li>
+                                        </ul>
+                                        <p class="pad-top mar-top bord-top text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                                    </div>
+                                    <div class="col-sm-4 col-md-3">
+                                        <!--Mega menu list-->
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#" class="media mar-btm">
+                                                    <span class="badge badge-success pull-right">90%</span>
+                                                    <div class="media-left">
+                                                        <i class="demo-pli-data-settings icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="text-semibold text-dark mar-no">Data Backup</p>
+                                                        <small class="text-muted">This is the item description</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="media mar-btm">
+                                                    <div class="media-left">
+                                                        <i class="demo-pli-support icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="text-semibold text-dark mar-no">Support</p>
+                                                        <small class="text-muted">This is the item description</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="media mar-btm">
+                                                    <div class="media-left">
+                                                        <i class="demo-pli-computer-secure icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="text-semibold text-dark mar-no">Security</p>
+                                                        <small class="text-muted">This is the item description</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="media mar-btm">
+                                                    <div class="media-left">
+                                                        <i class="demo-pli-map-2 icon-2x"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="text-semibold text-dark mar-no">Location</p>
+                                                        <small class="text-muted">This is the item description</small>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <p class="dropdown-header"><i class="demo-pli-file-jpg icon-fw"></i> Gallery</p>
+                                        <ul class="list-unstyled list-inline text-justify">
+
+                                            <li class="pad-btm">
+                                                <img src="img/thumbs/mega-menu-2.jpg" alt="thumbs">
+                                            </li>
+                                            <li class="pad-btm">
+                                                <img src="img/thumbs/mega-menu-3.jpg" alt="thumbs">
+                                            </li>
+                                            <li class="pad-btm">
+                                                <img src="img/thumbs/mega-menu-1.jpg" alt="thumbs">
+                                            </li>
+                                            <li class="pad-btm">
+                                                <img src="img/thumbs/mega-menu-4.jpg" alt="thumbs">
+                                            </li>
+                                            <li class="pad-btm">
+                                                <img src="img/thumbs/mega-menu-5.jpg" alt="thumbs">
+                                            </li>
+                                            <li class="pad-btm">
+                                                <img src="img/thumbs/mega-menu-6.jpg" alt="thumbs">
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="btn btn-sm btn-block btn-default">Browse Gallery</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End mega dropdown-->
+
+                    </ul>
+                    <ul class="nav navbar-top-links pull-right">
+
+                        <!--Language selector-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="dropdown">
+                            <a id="demo-lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown">
+                                <span class="lang-selected">
+                                    <img class="lang-flag" src="img/flags/united-kingdom.png" alt="English">
+                                </span>
+                            </a>
+
+                            <!--Language selector menu-->
+                            <ul class="head-list dropdown-menu">
+						        <li>
+						            <!--English-->
+						            <a href="#" class="active">
+						                <img class="lang-flag" src="img/flags/united-kingdom.png" alt="English">
+						                <span class="lang-id">EN</span>
+						                <span class="lang-name">English</span>
+						            </a>
+						        </li>
+						        <li>
+						            <!--France-->
+						            <a href="#">
+						                <img class="lang-flag" src="img/flags/france.png" alt="France">
+						                <span class="lang-id">FR</span>
+						                <span class="lang-name">Fran&ccedil;ais</span>
+						            </a>
+						        </li>
+						        <li>
+						            <!--Germany-->
+						            <a href="#">
+						                <img class="lang-flag" src="img/flags/germany.png" alt="Germany">
+						                <span class="lang-id">DE</span>
+						                <span class="lang-name">Deutsch</span>
+						            </a>
+						        </li>
+						        <li>
+						            <!--Italy-->
+						            <a href="#">
+						                <img class="lang-flag" src="img/flags/italy.png" alt="Italy">
+						                <span class="lang-id">IT</span>
+						                <span class="lang-name">Italiano</span>
+						            </a>
+						        </li>
+						        <li>
+						            <!--Spain-->
+						            <a href="#">
+						                <img class="lang-flag" src="img/flags/spain.png" alt="Spain">
+						                <span class="lang-id">ES</span>
+						                <span class="lang-name">Espa&ntilde;ol</span>
+						            </a>
+						        </li>
+                            </ul>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End language selector-->
+
+
+
+                        <!--User dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li id="dropdown-user" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                <span class="pull-right">
+                                    <!--<img class="img-circle img-user media-object" src="img/profile-photos/1.png" alt="Profile Picture">-->
+                                    <i class="demo-pli-male ic-user"></i>
+                                </span>
+                                <div class="username hidden-xs">Aaron Chavez</div>
+                            </a>
+
+
+                            <div class="dropdown-menu dropdown-menu-md dropdown-menu-right panel-default">
+
+                                <!-- Dropdown heading  -->
+                                <div class="pad-all bord-btm">
+                                    <p class="text-main mar-btm"><span class="text-bold">750GB</span> of 1,000GB Used</p>
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar" style="width: 70%;">
+                                            <span class="sr-only">70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- User dropdown menu -->
+                                <ul class="head-list">
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-male icon-lg icon-fw"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="badge badge-danger pull-right">9</span>
+                                            <i class="demo-pli-mail icon-lg icon-fw"></i> Messages
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="label label-success pull-right">New</span>
+                                            <i class="demo-pli-gear icon-lg icon-fw"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-information icon-lg icon-fw"></i> Help
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-computer-secure icon-lg icon-fw"></i> Lock screen
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Dropdown footer -->
+                                <div class="pad-all text-right">
+                                    <a href="pages-login.html" class="btn btn-primary">
+                                        <i class="demo-pli-unlock"></i> Logout
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End user dropdown-->
+
+                        <li>
+                            <a href="#" class="aside-toggle navbar-aside-icon">
+                                <i class="pci-ver-dots"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
+
+            </div>
+        </header>
+        <!--===================================================-->
+        <!--END NAVBAR-->
+
+        <div class="boxed">
+
+            <!--CONTENT CONTAINER-->
+            <!--===================================================-->
+            <div id="content-container">
+                
+                <!--Page Title-->
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <div id="page-title">
+                    <h1 class="page-header text-overflow">Advanced Form Elements</h1>
+
+                    <!--Searchbox-->
+                    <div class="searchbox">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search..">
+                            <span class="input-group-btn">
+                                <button class="text-muted" type="button"><i class="demo-pli-magnifi-glass"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--End page title-->
+
+
+                <!--Breadcrumb-->
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Forms</a></li>
+					<li class="active">Advanced Form Elements</li>
+                </ol>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--End breadcrumb-->
+
+
+        
+
+                <!--Page content-->
+                <!--===================================================-->
+                <div id="page-content">
+                    
+					            <div class="row">
+					                <div class="col-lg-6">
+					                    <div class="panel">
+					                        <div class="panel-heading">
+					                            <h3 class="panel-title">Bootstrap Tags Input</h3>
+					                        </div>
+					                        <div class="panel-body">
+					                            <p>jQuery plugin providing a Twitter Bootstrap user interface for managing tags</p><br>
+					
+					                            <!-- Bootstrap Tags Input -->
+					                            <!--===================================================-->
+					                            <input type="text" class="form-control" placeholder="Add a tag" value="Sport, Movie, Documents, Video" data-role="tagsinput">
+					                            <!--===================================================-->
+					
+					                        </div>
+					                    </div>
+					                    <div class="panel">
+					                        <div class="panel-heading">
+					                            <h3 class="panel-title">Chosen</h3>
+					                        </div>
+					                        <div class="panel-body">
+					                            <p class="text-main text-bold mar-no">Standart Select</p>
+					                            <p>Chosen is a jQuery plugin that makes long, unwieldy select boxes much more user-friendly.</p>
+					
+					
+					                            <!-- Default choosen -->
+					                            <!--===================================================-->
+					                            <select data-placeholder="Choose a Country..." id="demo-chosen-select" tabindex="2">
+					                                <option value="United States">United States</option>
+					                                <option value="United Kingdom">United Kingdom</option>
+					                                <option value="Afghanistan">Afghanistan</option>
+					                                <option value="Aland Islands">Aland Islands</option>
+					                                <option value="Albania">Albania</option>
+					                                <option value="Algeria">Algeria</option>
+					                                <option value="American Samoa">American Samoa</option>
+					                                <option value="Andorra">Andorra</option>
+					                                <option value="Angola">Angola</option>
+					                                <option value="Anguilla">Anguilla</option>
+					                                <option value="Antarctica">Antarctica</option>
+					                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+					                                <option value="Argentina">Argentina</option>
+					                                <option value="Armenia">Armenia</option>
+					                                <option value="Aruba">Aruba</option>
+					                                <option value="Australia">Australia</option>
+					                                <option value="Austria">Austria</option>
+					                                <option value="Azerbaijan">Azerbaijan</option>
+					                                <option value="Bahamas">Bahamas</option>
+					                                <option value="Bahrain">Bahrain</option>
+					                                <option value="Bangladesh">Bangladesh</option>
+					                                <option value="Barbados">Barbados</option>
+					                                <option value="Belarus">Belarus</option>
+					                                <option value="Belgium">Belgium</option>
+					                                <option value="Belize">Belize</option>
+					                                <option value="Benin">Benin</option>
+					                                <option value="Bermuda">Bermuda</option>
+					                                <option value="Bhutan">Bhutan</option>
+					                                <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+					                                <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+					                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+					                                <option value="Botswana">Botswana</option>
+					                                <option value="Bouvet Island">Bouvet Island</option>
+					                                <option value="Brazil">Brazil</option>
+					                                <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+					                                <option value="Brunei Darussalam">Brunei Darussalam</option>
+					                                <option value="Bulgaria">Bulgaria</option>
+					                                <option value="Burkina Faso">Burkina Faso</option>
+					                                <option value="Burundi">Burundi</option>
+					                                <option value="Cambodia">Cambodia</option>
+					                                <option value="Cameroon">Cameroon</option>
+					                                <option value="Canada">Canada</option>
+					                                <option value="Cape Verde">Cape Verde</option>
+					                                <option value="Cayman Islands">Cayman Islands</option>
+					                                <option value="Central African Republic">Central African Republic</option>
+					                                <option value="Chad">Chad</option>
+					                                <option value="Chile">Chile</option>
+					                                <option value="China">China</option>
+					                                <option value="Christmas Island">Christmas Island</option>
+					                                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+					                                <option value="Colombia">Colombia</option>
+					                                <option value="Comoros">Comoros</option>
+					                                <option value="Congo">Congo</option>
+					                                <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+					                                <option value="Cook Islands">Cook Islands</option>
+					                                <option value="Costa Rica">Costa Rica</option>
+					                                <option value="Cote D&apos;ivoire">Cote D\'ivoire</option>
+					                                <option value="Croatia">Croatia</option>
+					                                <option value="Cuba">Cuba</option>
+					                                <option value="Curacao">Curacao</option>
+					                                <option value="Cyprus">Cyprus</option>
+					                                <option value="Czech Republic">Czech Republic</option>
+					                                <option value="Denmark">Denmark</option>
+					                                <option value="Djibouti">Djibouti</option>
+					                                <option value="Dominica">Dominica</option>
+					                                <option value="Dominican Republic">Dominican Republic</option>
+					                                <option value="Ecuador">Ecuador</option>
+					                                <option value="Egypt">Egypt</option>
+					                                <option value="El Salvador">El Salvador</option>
+					                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+					                                <option value="Eritrea">Eritrea</option>
+					                                <option value="Estonia">Estonia</option>
+					                                <option value="Ethiopia">Ethiopia</option>
+					                                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+					                                <option value="Faroe Islands">Faroe Islands</option>
+					                                <option value="Fiji">Fiji</option>
+					                                <option value="Finland">Finland</option>
+					                                <option value="France">France</option>
+					                                <option value="French Guiana">French Guiana</option>
+					                                <option value="French Polynesia">French Polynesia</option>
+					                                <option value="French Southern Territories">French Southern Territories</option>
+					                                <option value="Gabon">Gabon</option>
+					                                <option value="Gambia">Gambia</option>
+					                                <option value="Georgia">Georgia</option>
+					                                <option value="Germany">Germany</option>
+					                                <option value="Ghana">Ghana</option>
+					                                <option value="Gibraltar">Gibraltar</option>
+					                                <option value="Greece">Greece</option>
+					                                <option value="Greenland">Greenland</option>
+					                                <option value="Grenada">Grenada</option>
+					                                <option value="Guadeloupe">Guadeloupe</option>
+					                                <option value="Guam">Guam</option>
+					                                <option value="Guatemala">Guatemala</option>
+					                                <option value="Guernsey">Guernsey</option>
+					                                <option value="Guinea">Guinea</option>
+					                                <option value="Guinea-bissau">Guinea-bissau</option>
+					                                <option value="Guyana">Guyana</option>
+					                                <option value="Haiti">Haiti</option>
+					                                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+					                                <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+					                                <option value="Honduras">Honduras</option>
+					                                <option value="Hong Kong">Hong Kong</option>
+					                                <option value="Hungary">Hungary</option>
+					                                <option value="Iceland">Iceland</option>
+					                                <option value="India">India</option>
+					                                <option value="Indonesia">Indonesia</option>
+					                                <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+					                                <option value="Iraq">Iraq</option>
+					                                <option value="Ireland">Ireland</option>
+					                                <option value="Isle of Man">Isle of Man</option>
+					                                <option value="Israel">Israel</option>
+					                                <option value="Italy">Italy</option>
+					                                <option value="Jamaica">Jamaica</option>
+					                                <option value="Japan">Japan</option>
+					                                <option value="Jersey">Jersey</option>
+					                                <option value="Jordan">Jordan</option>
+					                                <option value="Kazakhstan">Kazakhstan</option>
+					                                <option value="Kenya">Kenya</option>
+					                                <option value="Kiribati">Kiribati</option>
+					                                <option value="Korea, Democratic People&apos;s Republic of">Korea, Democratic People\'s Republic of</option>
+					                                <option value="Korea, Republic of">Korea, Republic of</option>
+					                                <option value="Kuwait">Kuwait</option>
+					                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+					                                <option value="Lao People&apos;s Democratic Republic">Lao People\'s Democratic Republic</option>
+					                                <option value="Latvia">Latvia</option>
+					                                <option value="Lebanon">Lebanon</option>
+					                                <option value="Lesotho">Lesotho</option>
+					                                <option value="Liberia">Liberia</option>
+					                                <option value="Libya">Libya</option>
+					                                <option value="Liechtenstein">Liechtenstein</option>
+					                                <option value="Lithuania">Lithuania</option>
+					                                <option value="Luxembourg">Luxembourg</option>
+					                                <option value="Macao">Macao</option>
+					                                <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+					                                <option value="Madagascar">Madagascar</option>
+					                                <option value="Malawi">Malawi</option>
+					                                <option value="Malaysia">Malaysia</option>
+					                                <option value="Maldives">Maldives</option>
+					                                <option value="Mali">Mali</option>
+					                                <option value="Malta">Malta</option>
+					                                <option value="Marshall Islands">Marshall Islands</option>
+					                                <option value="Martinique">Martinique</option>
+					                                <option value="Mauritania">Mauritania</option>
+					                                <option value="Mauritius">Mauritius</option>
+					                                <option value="Mayotte">Mayotte</option>
+					                                <option value="Mexico">Mexico</option>
+					                                <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+					                                <option value="Moldova, Republic of">Moldova, Republic of</option>
+					                                <option value="Monaco">Monaco</option>
+					                                <option value="Mongolia">Mongolia</option>
+					                                <option value="Montenegro">Montenegro</option>
+					                                <option value="Montserrat">Montserrat</option>
+					                                <option value="Morocco">Morocco</option>
+					                                <option value="Mozambique">Mozambique</option>
+					                                <option value="Myanmar">Myanmar</option>
+					                                <option value="Namibia">Namibia</option>
+					                                <option value="Nauru">Nauru</option>
+					                                <option value="Nepal">Nepal</option>
+					                                <option value="Netherlands">Netherlands</option>
+					                                <option value="New Caledonia">New Caledonia</option>
+					                                <option value="New Zealand">New Zealand</option>
+					                                <option value="Nicaragua">Nicaragua</option>
+					                                <option value="Niger">Niger</option>
+					                                <option value="Nigeria">Nigeria</option>
+					                                <option value="Niue">Niue</option>
+					                                <option value="Norfolk Island">Norfolk Island</option>
+					                                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+					                                <option value="Norway">Norway</option>
+					                                <option value="Oman">Oman</option>
+					                                <option value="Pakistan">Pakistan</option>
+					                                <option value="Palau">Palau</option>
+					                                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+					                                <option value="Panama">Panama</option>
+					                                <option value="Papua New Guinea">Papua New Guinea</option>
+					                                <option value="Paraguay">Paraguay</option>
+					                                <option value="Peru">Peru</option>
+					                                <option value="Philippines">Philippines</option>
+					                                <option value="Pitcairn">Pitcairn</option>
+					                                <option value="Poland">Poland</option>
+					                                <option value="Portugal">Portugal</option>
+					                                <option value="Puerto Rico">Puerto Rico</option>
+					                                <option value="Qatar">Qatar</option>
+					                                <option value="Reunion">Reunion</option>
+					                                <option value="Romania">Romania</option>
+					                                <option value="Russian Federation">Russian Federation</option>
+					                                <option value="Rwanda">Rwanda</option>
+					                                <option value="Saint Barthelemy">Saint Barthelemy</option>
+					                                <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+					                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+					                                <option value="Saint Lucia">Saint Lucia</option>
+					                                <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+					                                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+					                                <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+					                                <option value="Samoa">Samoa</option>
+					                                <option value="San Marino">San Marino</option>
+					                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+					                                <option value="Saudi Arabia">Saudi Arabia</option>
+					                                <option value="Senegal">Senegal</option>
+					                                <option value="Serbia">Serbia</option>
+					                                <option value="Seychelles">Seychelles</option>
+					                                <option value="Sierra Leone">Sierra Leone</option>
+					                                <option value="Singapore">Singapore</option>
+					                                <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+					                                <option value="Slovakia">Slovakia</option>
+					                                <option value="Slovenia">Slovenia</option>
+					                                <option value="Solomon Islands">Solomon Islands</option>
+					                                <option value="Somalia">Somalia</option>
+					                                <option value="South Africa">South Africa</option>
+					                                <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+					                                <option value="South Sudan">South Sudan</option>
+					                                <option value="Spain">Spain</option>
+					                                <option value="Sri Lanka">Sri Lanka</option>
+					                                <option value="Sudan">Sudan</option>
+					                                <option value="Suriname">Suriname</option>
+					                                <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+					                                <option value="Swaziland">Swaziland</option>
+					                                <option value="Sweden">Sweden</option>
+					                                <option value="Switzerland">Switzerland</option>
+					                                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+					                                <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+					                                <option value="Tajikistan">Tajikistan</option>
+					                                <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+					                                <option value="Thailand">Thailand</option>
+					                                <option value="Timor-leste">Timor-leste</option>
+					                                <option value="Togo">Togo</option>
+					                                <option value="Tokelau">Tokelau</option>
+					                                <option value="Tonga">Tonga</option>
+					                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+					                                <option value="Tunisia">Tunisia</option>
+					                                <option value="Turkey">Turkey</option>
+					                                <option value="Turkmenistan">Turkmenistan</option>
+					                                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+					                                <option value="Tuvalu">Tuvalu</option>
+					                                <option value="Uganda">Uganda</option>
+					                                <option value="Ukraine">Ukraine</option>
+					                                <option value="United Arab Emirates">United Arab Emirates</option>
+					                                <option value="United Kingdom">United Kingdom</option>
+					                                <option value="United States">United States</option>
+					                                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+					                                <option value="Uruguay">Uruguay</option>
+					                                <option value="Uzbekistan">Uzbekistan</option>
+					                                <option value="Vanuatu">Vanuatu</option>
+					                                <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+					                                <option value="Viet Nam">Viet Nam</option>
+					                                <option value="Virgin Islands, British">Virgin Islands, British</option>
+					                                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+					                                <option value="Wallis and Futuna">Wallis and Futuna</option>
+					                                <option value="Western Sahara">Western Sahara</option>
+					                                <option value="Yemen">Yemen</option>
+					                                <option value="Zambia">Zambia</option>
+					                                <option value="Zimbabwe">Zimbabwe</option>
+					                            </select>
+					                            <!--===================================================-->
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold">Multiple Selects</p>
+					
+					                            <!-- Multiple Select Choosen -->
+					                            <!--===================================================-->
+					                            <select id="demo-cs-multiselect" data-placeholder="Choose a Country..." multiple tabindex="4">
+					                                <option value="United States">United States</option>
+					                                <option value="United Kingdom">United Kingdom</option>
+					                                <option value="Afghanistan">Afghanistan</option>
+					                                <option value="Aland Islands">Aland Islands</option>
+					                                <option value="Albania">Albania</option>
+					                                <option value="Algeria">Algeria</option>
+					                                <option value="American Samoa">American Samoa</option>
+					                                <option value="Andorra">Andorra</option>
+					                                <option value="Angola">Angola</option>
+					                                <option value="Anguilla">Anguilla</option>
+					                                <option value="Antarctica">Antarctica</option>
+					                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+					                                <option value="Argentina">Argentina</option>
+					                                <option value="Armenia">Armenia</option>
+					                                <option value="Aruba">Aruba</option>
+					                                <option value="Australia">Australia</option>
+					                                <option value="Austria">Austria</option>
+					                                <option value="Azerbaijan">Azerbaijan</option>
+					                                <option value="Bahamas">Bahamas</option>
+					                                <option value="Bahrain">Bahrain</option>
+					                                <option value="Bangladesh">Bangladesh</option>
+					                                <option value="Barbados">Barbados</option>
+					                                <option value="Belarus">Belarus</option>
+					                                <option value="Belgium">Belgium</option>
+					                                <option value="Belize">Belize</option>
+					                                <option value="Benin">Benin</option>
+					                                <option value="Bermuda">Bermuda</option>
+					                                <option value="Bhutan">Bhutan</option>
+					                                <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+					                                <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+					                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+					                                <option value="Botswana">Botswana</option>
+					                                <option value="Bouvet Island">Bouvet Island</option>
+					                                <option value="Brazil">Brazil</option>
+					                                <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+					                                <option value="Brunei Darussalam">Brunei Darussalam</option>
+					                                <option value="Bulgaria">Bulgaria</option>
+					                                <option value="Burkina Faso">Burkina Faso</option>
+					                                <option value="Burundi">Burundi</option>
+					                                <option value="Cambodia">Cambodia</option>
+					                                <option value="Cameroon">Cameroon</option>
+					                                <option value="Canada">Canada</option>
+					                                <option value="Cape Verde">Cape Verde</option>
+					                                <option value="Cayman Islands">Cayman Islands</option>
+					                                <option value="Central African Republic">Central African Republic</option>
+					                                <option value="Chad">Chad</option>
+					                                <option value="Chile">Chile</option>
+					                                <option value="China">China</option>
+					                                <option value="Christmas Island">Christmas Island</option>
+					                                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+					                                <option value="Colombia">Colombia</option>
+					                                <option value="Comoros">Comoros</option>
+					                                <option value="Congo">Congo</option>
+					                                <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+					                                <option value="Cook Islands">Cook Islands</option>
+					                                <option value="Costa Rica">Costa Rica</option>
+					                                <option value="Cote D&apos;ivoire">Cote D\'ivoire</option>
+					                                <option value="Croatia">Croatia</option>
+					                                <option value="Cuba">Cuba</option>
+					                                <option value="Curacao">Curacao</option>
+					                                <option value="Cyprus">Cyprus</option>
+					                                <option value="Czech Republic">Czech Republic</option>
+					                                <option value="Denmark">Denmark</option>
+					                                <option value="Djibouti">Djibouti</option>
+					                                <option value="Dominica">Dominica</option>
+					                                <option value="Dominican Republic">Dominican Republic</option>
+					                                <option value="Ecuador">Ecuador</option>
+					                                <option value="Egypt">Egypt</option>
+					                                <option value="El Salvador">El Salvador</option>
+					                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+					                                <option value="Eritrea">Eritrea</option>
+					                                <option value="Estonia">Estonia</option>
+					                                <option value="Ethiopia">Ethiopia</option>
+					                                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+					                                <option value="Faroe Islands">Faroe Islands</option>
+					                                <option value="Fiji">Fiji</option>
+					                                <option value="Finland">Finland</option>
+					                                <option value="France">France</option>
+					                                <option value="French Guiana">French Guiana</option>
+					                                <option value="French Polynesia">French Polynesia</option>
+					                                <option value="French Southern Territories">French Southern Territories</option>
+					                                <option value="Gabon">Gabon</option>
+					                                <option value="Gambia">Gambia</option>
+					                                <option value="Georgia">Georgia</option>
+					                                <option value="Germany">Germany</option>
+					                                <option value="Ghana">Ghana</option>
+					                                <option value="Gibraltar">Gibraltar</option>
+					                                <option value="Greece">Greece</option>
+					                                <option value="Greenland">Greenland</option>
+					                                <option value="Grenada">Grenada</option>
+					                                <option value="Guadeloupe">Guadeloupe</option>
+					                                <option value="Guam">Guam</option>
+					                                <option value="Guatemala">Guatemala</option>
+					                                <option value="Guernsey">Guernsey</option>
+					                                <option value="Guinea">Guinea</option>
+					                                <option value="Guinea-bissau">Guinea-bissau</option>
+					                                <option value="Guyana">Guyana</option>
+					                                <option value="Haiti">Haiti</option>
+					                                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+					                                <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+					                                <option value="Honduras">Honduras</option>
+					                                <option value="Hong Kong">Hong Kong</option>
+					                                <option value="Hungary">Hungary</option>
+					                                <option value="Iceland">Iceland</option>
+					                                <option value="India">India</option>
+					                                <option value="Indonesia">Indonesia</option>
+					                                <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+					                                <option value="Iraq">Iraq</option>
+					                                <option value="Ireland">Ireland</option>
+					                                <option value="Isle of Man">Isle of Man</option>
+					                                <option value="Israel">Israel</option>
+					                                <option value="Italy">Italy</option>
+					                                <option value="Jamaica">Jamaica</option>
+					                                <option value="Japan">Japan</option>
+					                                <option value="Jersey">Jersey</option>
+					                                <option value="Jordan">Jordan</option>
+					                                <option value="Kazakhstan">Kazakhstan</option>
+					                                <option value="Kenya">Kenya</option>
+					                                <option value="Kiribati">Kiribati</option>
+					                                <option value="Korea, Democratic People&apos;s Republic of">Korea, Democratic People\'s Republic of</option>
+					                                <option value="Korea, Republic of">Korea, Republic of</option>
+					                                <option value="Kuwait">Kuwait</option>
+					                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+					                                <option value="Lao People&apos;s Democratic Republic">Lao People\'s Democratic Republic</option>
+					                                <option value="Latvia">Latvia</option>
+					                                <option value="Lebanon">Lebanon</option>
+					                                <option value="Lesotho">Lesotho</option>
+					                                <option value="Liberia">Liberia</option>
+					                                <option value="Libya">Libya</option>
+					                                <option value="Liechtenstein">Liechtenstein</option>
+					                                <option value="Lithuania">Lithuania</option>
+					                                <option value="Luxembourg">Luxembourg</option>
+					                                <option value="Macao">Macao</option>
+					                                <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+					                                <option value="Madagascar">Madagascar</option>
+					                                <option value="Malawi">Malawi</option>
+					                                <option value="Malaysia">Malaysia</option>
+					                                <option value="Maldives">Maldives</option>
+					                                <option value="Mali">Mali</option>
+					                                <option value="Malta">Malta</option>
+					                                <option value="Marshall Islands">Marshall Islands</option>
+					                                <option value="Martinique">Martinique</option>
+					                                <option value="Mauritania">Mauritania</option>
+					                                <option value="Mauritius">Mauritius</option>
+					                                <option value="Mayotte">Mayotte</option>
+					                                <option value="Mexico">Mexico</option>
+					                                <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+					                                <option value="Moldova, Republic of">Moldova, Republic of</option>
+					                                <option value="Monaco">Monaco</option>
+					                                <option value="Mongolia">Mongolia</option>
+					                                <option value="Montenegro">Montenegro</option>
+					                                <option value="Montserrat">Montserrat</option>
+					                                <option value="Morocco">Morocco</option>
+					                                <option value="Mozambique">Mozambique</option>
+					                                <option value="Myanmar">Myanmar</option>
+					                                <option value="Namibia">Namibia</option>
+					                                <option value="Nauru">Nauru</option>
+					                                <option value="Nepal">Nepal</option>
+					                                <option value="Netherlands">Netherlands</option>
+					                                <option value="New Caledonia">New Caledonia</option>
+					                                <option value="New Zealand">New Zealand</option>
+					                                <option value="Nicaragua">Nicaragua</option>
+					                                <option value="Niger">Niger</option>
+					                                <option value="Nigeria">Nigeria</option>
+					                                <option value="Niue">Niue</option>
+					                                <option value="Norfolk Island">Norfolk Island</option>
+					                                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+					                                <option value="Norway">Norway</option>
+					                                <option value="Oman">Oman</option>
+					                                <option value="Pakistan">Pakistan</option>
+					                                <option value="Palau">Palau</option>
+					                                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+					                                <option value="Panama">Panama</option>
+					                                <option value="Papua New Guinea">Papua New Guinea</option>
+					                                <option value="Paraguay">Paraguay</option>
+					                                <option value="Peru">Peru</option>
+					                                <option value="Philippines">Philippines</option>
+					                                <option value="Pitcairn">Pitcairn</option>
+					                                <option value="Poland">Poland</option>
+					                                <option value="Portugal">Portugal</option>
+					                                <option value="Puerto Rico">Puerto Rico</option>
+					                                <option value="Qatar">Qatar</option>
+					                                <option value="Reunion">Reunion</option>
+					                                <option value="Romania">Romania</option>
+					                                <option value="Russian Federation">Russian Federation</option>
+					                                <option value="Rwanda">Rwanda</option>
+					                                <option value="Saint Barthelemy">Saint Barthelemy</option>
+					                                <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+					                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+					                                <option value="Saint Lucia">Saint Lucia</option>
+					                                <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+					                                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+					                                <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+					                                <option value="Samoa">Samoa</option>
+					                                <option value="San Marino">San Marino</option>
+					                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+					                                <option value="Saudi Arabia">Saudi Arabia</option>
+					                                <option value="Senegal">Senegal</option>
+					                                <option value="Serbia">Serbia</option>
+					                                <option value="Seychelles">Seychelles</option>
+					                                <option value="Sierra Leone">Sierra Leone</option>
+					                                <option value="Singapore">Singapore</option>
+					                                <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+					                                <option value="Slovakia">Slovakia</option>
+					                                <option value="Slovenia">Slovenia</option>
+					                                <option value="Solomon Islands">Solomon Islands</option>
+					                                <option value="Somalia">Somalia</option>
+					                                <option value="South Africa">South Africa</option>
+					                                <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+					                                <option value="South Sudan">South Sudan</option>
+					                                <option value="Spain">Spain</option>
+					                                <option value="Sri Lanka">Sri Lanka</option>
+					                                <option value="Sudan">Sudan</option>
+					                                <option value="Suriname">Suriname</option>
+					                                <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+					                                <option value="Swaziland">Swaziland</option>
+					                                <option value="Sweden">Sweden</option>
+					                                <option value="Switzerland">Switzerland</option>
+					                                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+					                                <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+					                                <option value="Tajikistan">Tajikistan</option>
+					                                <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+					                                <option value="Thailand">Thailand</option>
+					                                <option value="Timor-leste">Timor-leste</option>
+					                                <option value="Togo">Togo</option>
+					                                <option value="Tokelau">Tokelau</option>
+					                                <option value="Tonga">Tonga</option>
+					                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+					                                <option value="Tunisia">Tunisia</option>
+					                                <option value="Turkey">Turkey</option>
+					                                <option value="Turkmenistan">Turkmenistan</option>
+					                                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+					                                <option value="Tuvalu">Tuvalu</option>
+					                                <option value="Uganda">Uganda</option>
+					                                <option value="Ukraine">Ukraine</option>
+					                                <option value="United Arab Emirates">United Arab Emirates</option>
+					                                <option value="United Kingdom">United Kingdom</option>
+					                                <option value="United States">United States</option>
+					                                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+					                                <option value="Uruguay">Uruguay</option>
+					                                <option value="Uzbekistan">Uzbekistan</option>
+					                                <option value="Vanuatu">Vanuatu</option>
+					                                <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+					                                <option value="Viet Nam">Viet Nam</option>
+					                                <option value="Virgin Islands, British">Virgin Islands, British</option>
+					                                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+					                                <option value="Wallis and Futuna">Wallis and Futuna</option>
+					                                <option value="Western Sahara">Western Sahara</option>
+					                                <option value="Yemen">Yemen</option>
+					                                <option value="Zambia">Zambia</option>
+					                                <option value="Zimbabwe">Zimbabwe</option>
+					                            </select>
+					                            <!--===================================================-->
+					
+					                        </div>
+					                    </div>
+					                    <div class="panel">
+					                        <div class="panel-heading">
+					                            <h3 class="panel-title">Bootstrap Select</h3>
+					                        </div>
+					                        <div class="panel-body">
+					                            <p class="text-main text-bold mar-no">Standart Select</p>
+					                            <p>A custom select for Twitter Bootstrap using button dropdown.</p>
+					
+					
+					                            <!-- Default Bootstrap Select -->
+					                            <!--===================================================-->
+					                            <select class="selectpicker">
+					                                <option>HTML</option>
+					                                <option>CSS</option>
+					                                <option>jQuery</option>
+					                                <option>Javascript</option>
+					                            </select>
+					                            <!--===================================================-->
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold">Groups</p>
+					
+					
+					                            <!-- Bootstrap Select with Option Groups -->
+					                            <!--===================================================-->
+					                            <select class="selectpicker">
+					                                <optgroup label="Music">
+					                                    <option>Pop</option>
+					                                    <option>Rap</option>
+					                                    <option>Rock</option>
+					                                    <option>Sountrack</option>
+					                                </optgroup>
+					                                <optgroup label="Movie">
+					                                    <option>Action</option>
+					                                    <option>Comedy</option>
+					                                    <option>Adventure</option>
+					                                    <option>Drama</option>
+					                                    <option>Romance</option>
+					                                </optgroup>
+					                            </select>
+					                            <!--===================================================-->
+					
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold">Multiple selects</p>
+					
+					                            <!-- Bootstrap Select with Multiple Selects -->
+					                            <!--===================================================-->
+					                            <select class="selectpicker" multiple title="Choose one of the following..." data-width="100%">
+					                                <option>Family</option>
+					                                <option>Friend</option>
+					                                <option>Partner</option>
+					                            </select>
+					                            <!--===================================================-->
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold">Add a search input</p>
+					
+					
+					                            <!-- Bootstrap Select with Search Input -->
+					                            <!--===================================================-->
+					                            <select class="selectpicker" data-live-search="true" data-width="100%">
+					                                <option>Family</option>
+					                                <option>Friend</option>
+					                                <option>Partner</option>
+					                                <option>Sport</option>
+					                                <option>Movie</option>
+					                                <option>Documents</option>
+					                                <option>Music</option>
+					                                <option>Video</option>
+					                            </select>
+					                            <!--===================================================-->
+					
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold">Colored</p>
+					                            <div class="row">
+					
+					
+					                                <!-- Bootstrap Select : primary -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-primary">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					
+					
+					                                <!-- Bootstrap Select : Info -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-info">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					
+					
+					                                <!-- Bootstrap Select : Success -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-success">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					
+					
+					                                <!-- Bootstrap Select : Warning -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-warning">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					
+					
+					                                <!-- Bootstrap Select : Danger -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-danger">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					
+					
+					                                <!-- Bootstrap Select : Mint -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-mint">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					
+					                                <!-- Bootstrap Select : Purple -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-purple">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					
+					
+					                                <!-- Bootstrap Select : Pink -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-pink">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					
+					
+					                                <!-- Bootstrap Select : Dark -->
+					                                <!--===================================================-->
+					                                <select class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-4" data-style="btn-dark">
+					                                    <option>Family</option>
+					                                    <option>Friend</option>
+					                                    <option>Partner</option>
+					                                </select>
+					                            </div>
+					                        </div>
+					                    </div>
+					                    <div class="panel">
+					                        <div class="panel-heading">
+					                            <h3 class="panel-title">Range Slider component</h3>
+					                        </div>
+					                        <div class="panel-body">
+					                            <p class="text-main text-semibold text-lg">Horizontal</p>
+					                            <div class="row">
+					                                <div class="col-xs-6">
+					                                    <p class="text-main mar-btm">Default</p>
+					
+					                                    <!--Default Range Slider-->
+					                                    <!--===================================================-->
+					                                    <div id="demo-range-def"></div>
+					                                    <!--===================================================-->
+					
+					                                    <br>
+					                                    <div>
+					                                        <strong>Value : </strong>
+					                                        <span id="demo-range-def-val"></span>
+					                                    </div>
+					                                </div>
+					                                <div class="col-xs-6">
+					                                    <p class="text-main mar-btm">Step</p>
+					
+					                                    <!--Range Slider : Steps-->
+					                                    <!--===================================================-->
+					                                    <div id="demo-range-step"></div>
+					                                    <!--===================================================-->
+					
+					                                    <br>
+					                                    <div>
+					                                        <strong>Value : </strong>
+					                                        <span id="demo-range-step-val"></span>
+					                                    </div>
+					                                </div>
+					                            </div>
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-semibold text-lg">Vertical</p>
+					                            <p class="text-main mar-btm">Fixed Drag</p>
+					                            <div class="mar-rgt box-inline">
+					
+					                                <!--Vertical Range Slider-->
+					                                <!--===================================================-->
+					                                <div id="demo-range-ver1" class="range-vertical box-inline mar-rgt"></div>
+					                                <div id="demo-range-ver2" class="range-vertical box-inline mar-hor"></div>
+					                                <div id="demo-range-ver3" class="range-vertical box-inline mar-hor"></div>
+					                                <div id="demo-range-ver4" class="range-vertical box-inline mar-hor"></div>
+					                                <div id="demo-range-ver5" class="range-vertical box-inline"></div>
+					                                <!--===================================================-->
+					
+					                            </div>
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-semibold text-lg">Slider behaviour</p>
+					                            <div class="row">
+					                                <div class="col-xs-6">
+					                                    <p class="text-main mar-btm">Drag</p>
+					
+					                                    <!--Range Slider : Drag -->
+					                                    <!--===================================================-->
+					                                    <div id="demo-range-drg"></div>
+					
+					                                </div>
+					                                <div class="col-xs-6">
+					                                    <p class="text-main mar-btm">Fixed Drag</p>
+					
+					                                    <!--Range slider : Fixed Drag -->
+					                                    <!--===================================================-->
+					                                    <div id="demo-range-fxt"></div>
+					
+					                                </div>
+					                            </div>
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-semibold text-lg">Pips</p>
+					
+					                            <!--Range Slider : Pips -->
+					                            <!--===================================================-->
+					                            <div class="mar-btm pad-btm">
+					                                <div id="demo-range-hpips" class="demo-pips pips"></div>
+					                            </div>
+					                            <!--===================================================-->
+					
+					
+					                        </div>
+					                    </div>
+					                </div>
+					                <div class="col-lg-6">
+					                    <div class="panel">
+					                        <div class="panel-heading">
+					                            <h3 class="panel-title">Select 2</h3>
+					                        </div>
+					                        <div class="panel-body">
+					                            <p>Select2 is a jQuery based replacement for select boxes. It can take a regular select box and turn it into: </p>
+					                            <select id="demo-select2" class="demo_select2 form-control">
+					                                <optgroup label="Alaskan/Hawaiian Time Zone">
+					                                    <option value="AK">Alaska</option>
+					                                    <option value="HI">Hawaii</option>
+					                                </optgroup>
+					                                <optgroup label="Pacific Time Zone">
+					                                    <option value="CA">California</option>
+					                                    <option value="NV">Nevada</option>
+					                                    <option value="OR">Oregon</option>
+					                                    <option value="WA">Washington</option>
+					                                </optgroup>
+					                                <optgroup label="Mountain Time Zone">
+					                                    <option value="AZ">Arizona</option>
+					                                    <option value="CO">Colorado</option>
+					                                    <option value="ID">Idaho</option>
+					                                    <option value="MT">Montana</option>
+					                                    <option value="NE">Nebraska</option>
+					                                    <option value="NM">New Mexico</option>
+					                                    <option value="ND">North Dakota</option>
+					                                    <option value="UT">Utah</option>
+					                                    <option value="WY">Wyoming</option>
+					                                </optgroup>
+					                                <optgroup label="Central Time Zone">
+					                                    <option value="AL">Alabama</option>
+					                                    <option value="AR">Arkansas</option>
+					                                    <option value="IL">Illinois</option>
+					                                    <option value="IA">Iowa</option>
+					                                    <option value="KS">Kansas</option>
+					                                    <option value="KY">Kentucky</option>
+					                                    <option value="LA">Louisiana</option>
+					                                    <option value="MN">Minnesota</option>
+					                                    <option value="MS">Mississippi</option>
+					                                    <option value="MO">Missouri</option>
+					                                    <option value="OK">Oklahoma</option>
+					                                    <option value="SD">South Dakota</option>
+					                                    <option value="TX">Texas</option>
+					                                    <option value="TN">Tennessee</option>
+					                                    <option value="WI">Wisconsin</option>
+					                                </optgroup>
+					                                <optgroup label="Eastern Time Zone">
+					                                    <option value="CT">Connecticut</option>
+					                                    <option value="DE">Delaware</option>
+					                                    <option value="FL">Florida</option>
+					                                    <option value="GA">Georgia</option>
+					                                    <option value="IN">Indiana</option>
+					                                    <option value="ME">Maine</option>
+					                                    <option value="MD">Maryland</option>
+					                                    <option value="MA">Massachusetts</option>
+					                                    <option value="MI">Michigan</option>
+					                                    <option value="NH">New Hampshire</option>
+					                                    <option value="NJ">New Jersey</option>
+					                                    <option value="NY">New York</option>
+					                                    <option value="NC">North Carolina</option>
+					                                    <option value="OH">Ohio</option>
+					                                    <option value="PA">Pennsylvania</option>
+					                                    <option value="RI">Rhode Island</option>
+					                                    <option value="SC">South Carolina</option>
+					                                    <option value="VT">Vermont</option>
+					                                    <option value="VA">Virginia</option>
+					                                    <option value="WV">West Virginia</option>
+					                                </optgroup>
+					                            </select>
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold mar-no">Placeholder</p>
+					                            <p>A placeholder value can be defined and will be displayed until a selection is made.</p>
+					                            <select id="demo-select2-placeholder" class="form-control">
+					                                <optgroup label="Alaskan/Hawaiian Time Zone">
+					                                    <option value="AK">Alaska</option>
+					                                    <option value="HI">Hawaii</option>
+					                                </optgroup>
+					                                <optgroup label="Pacific Time Zone">
+					                                    <option value="CA">California</option>
+					                                    <option value="NV">Nevada</option>
+					                                    <option value="OR">Oregon</option>
+					                                    <option value="WA">Washington</option>
+					                                </optgroup>
+					                                <optgroup label="Mountain Time Zone">
+					                                    <option value="AZ">Arizona</option>
+					                                    <option value="CO">Colorado</option>
+					                                    <option value="ID">Idaho</option>
+					                                    <option value="MT">Montana</option>
+					                                    <option value="NE">Nebraska</option>
+					                                    <option value="NM">New Mexico</option>
+					                                    <option value="ND">North Dakota</option>
+					                                    <option value="UT">Utah</option>
+					                                    <option value="WY">Wyoming</option>
+					                                </optgroup>
+					                                <optgroup label="Central Time Zone">
+					                                    <option value="AL">Alabama</option>
+					                                    <option value="AR">Arkansas</option>
+					                                    <option value="IL">Illinois</option>
+					                                    <option value="IA">Iowa</option>
+					                                    <option value="KS">Kansas</option>
+					                                    <option value="KY">Kentucky</option>
+					                                    <option value="LA">Louisiana</option>
+					                                    <option value="MN">Minnesota</option>
+					                                    <option value="MS">Mississippi</option>
+					                                    <option value="MO">Missouri</option>
+					                                    <option value="OK">Oklahoma</option>
+					                                    <option value="SD">South Dakota</option>
+					                                    <option value="TX">Texas</option>
+					                                    <option value="TN">Tennessee</option>
+					                                    <option value="WI">Wisconsin</option>
+					                                </optgroup>
+					                                <optgroup label="Eastern Time Zone">
+					                                    <option value="CT">Connecticut</option>
+					                                    <option value="DE">Delaware</option>
+					                                    <option value="FL">Florida</option>
+					                                    <option value="GA">Georgia</option>
+					                                    <option value="IN">Indiana</option>
+					                                    <option value="ME">Maine</option>
+					                                    <option value="MD">Maryland</option>
+					                                    <option value="MA">Massachusetts</option>
+					                                    <option value="MI">Michigan</option>
+					                                    <option value="NH">New Hampshire</option>
+					                                    <option value="NJ">New Jersey</option>
+					                                    <option value="NY">New York</option>
+					                                    <option value="NC">North Carolina</option>
+					                                    <option value="OH">Ohio</option>
+					                                    <option value="PA">Pennsylvania</option>
+					                                    <option value="RI">Rhode Island</option>
+					                                    <option value="SC">South Carolina</option>
+					                                    <option value="VT">Vermont</option>
+					                                    <option value="VA">Virginia</option>
+					                                    <option value="WV">West Virginia</option>
+					                                </optgroup>
+					                            </select>
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold mar-no">Multiple select boxes</p>
+					                            <p>Select2 also supports multi-value select boxes. The select below is declared with the <code>multiple</code> attribute.</p>
+					                            <select id="demo-select2-multiple-selects" multiple="multiple" class="form-control">
+					                                <optgroup label="Alaskan/Hawaiian Time Zone">
+					                                    <option value="AK">Alaska</option>
+					                                    <option value="HI">Hawaii</option>
+					                                </optgroup>
+					                                <optgroup label="Pacific Time Zone">
+					                                    <option value="CA">California</option>
+					                                    <option value="NV">Nevada</option>
+					                                    <option value="OR">Oregon</option>
+					                                    <option value="WA">Washington</option>
+					                                </optgroup>
+					                                <optgroup label="Mountain Time Zone">
+					                                    <option value="AZ">Arizona</option>
+					                                    <option value="CO">Colorado</option>
+					                                    <option value="ID">Idaho</option>
+					                                    <option value="MT">Montana</option>
+					                                    <option value="NE">Nebraska</option>
+					                                    <option value="NM">New Mexico</option>
+					                                    <option value="ND">North Dakota</option>
+					                                    <option value="UT">Utah</option>
+					                                    <option value="WY">Wyoming</option>
+					                                </optgroup>
+					                                <optgroup label="Central Time Zone">
+					                                    <option value="AL">Alabama</option>
+					                                    <option value="AR">Arkansas</option>
+					                                    <option value="IL">Illinois</option>
+					                                    <option value="IA">Iowa</option>
+					                                    <option value="KS">Kansas</option>
+					                                    <option value="KY">Kentucky</option>
+					                                    <option value="LA">Louisiana</option>
+					                                    <option value="MN">Minnesota</option>
+					                                    <option value="MS">Mississippi</option>
+					                                    <option value="MO">Missouri</option>
+					                                    <option value="OK">Oklahoma</option>
+					                                    <option value="SD">South Dakota</option>
+					                                    <option value="TX">Texas</option>
+					                                    <option value="TN">Tennessee</option>
+					                                    <option value="WI">Wisconsin</option>
+					                                </optgroup>
+					                                <optgroup label="Eastern Time Zone">
+					                                    <option value="CT">Connecticut</option>
+					                                    <option value="DE">Delaware</option>
+					                                    <option value="FL">Florida</option>
+					                                    <option value="GA">Georgia</option>
+					                                    <option value="IN">Indiana</option>
+					                                    <option value="ME">Maine</option>
+					                                    <option value="MD">Maryland</option>
+					                                    <option value="MA">Massachusetts</option>
+					                                    <option value="MI">Michigan</option>
+					                                    <option value="NH">New Hampshire</option>
+					                                    <option value="NJ">New Jersey</option>
+					                                    <option value="NY">New York</option>
+					                                    <option value="NC">North Carolina</option>
+					                                    <option value="OH">Ohio</option>
+					                                    <option value="PA">Pennsylvania</option>
+					                                    <option value="RI">Rhode Island</option>
+					                                    <option value="SC">South Carolina</option>
+					                                    <option value="VT">Vermont</option>
+					                                    <option value="VA">Virginia</option>
+					                                    <option value="WV">West Virginia</option>
+					                                </optgroup>
+					                            </select>
+					
+					                        </div>
+					                    </div>
+					                    <div class="panel">
+					                        <div class="panel-heading">
+					                            <h3 class="panel-title">Bootstrap Timepicker</h3>
+					                        </div>
+					                        <div class="panel-body">
+					                            <p>Easily select a time for a text input using your mouse or keyboards arrow keys.</p>
+					                            <br>
+					                            <p class="text-main text-bold">Text input</p>
+					
+					                            <!--Bootstrap Timepicker : Text Input-->
+					                            <!--===================================================-->
+					                            <input id="demo-tp-textinput" type="text" class="form-control">
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold mar-btm">Component</p>
+					
+					                            <!--Bootstrap Timepicker : Component-->
+					                            <!--===================================================-->
+					                            <div class="input-group date">
+					                                <input id="demo-tp-com" type="text" class="form-control">
+					                                <span class="input-group-addon"><i class="demo-pli-clock"></i></span>
+					                            </div>
+					                            <!--===================================================-->
+					
+					                        </div>
+					                    </div>
+					                    <div class="panel">
+					                        <div class="panel-heading">
+					                            <h3 class="panel-title">Bootstrap Datepicker</h3>
+					                        </div>
+					                        <div class="panel-body">
+					                            <p>Bootstrap-datepicker provides a flexible datepicker widget in the Twitter bootstrap style.</p><br>
+					                            <p class="text-main text-bold">Text input</p>
+					
+					
+					                            <!--Bootstrap Datepicker : Text Input-->
+					                            <!--===================================================-->
+					                            <div id="demo-dp-txtinput">
+					                                <input type="text" class="form-control">
+					                            </div>
+					                            <!--===================================================-->
+					
+					                            <hr class="new-section-sm bord-no">
+					
+					                            <p class="text-main text-bold">Component</p>
+					
+					                            <!--Bootstrap Datepicker : Component-->
+					                            <!--===================================================-->
+					                            <div id="demo-dp-component">
+					                                <div class="input-group date">
+					                                    <input type="text" class="form-control">
+					                                    <span class="input-group-addon"><i class="demo-pli-calendar-4"></i></span>
+					                                </div>
+					                                <small class="text-muted">Auto close on select</small>
+					                            </div>
+					                            <!--===================================================-->
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold">Range</p>
+					
+					                            <!--Bootstrap Datepicker : Range-->
+					                            <!--===================================================-->
+					                            <div id="demo-dp-range">
+					                                <div class="input-daterange input-group" id="datepicker">
+					                                    <input type="text" class="form-control" name="start" />
+					                                    <span class="input-group-addon">to</span>
+					                                    <input type="text" class="form-control" name="end" />
+					                                </div>
+					                            </div>
+					                            <!--===================================================-->
+					
+					                            <hr class="new-section-sm bord-no">
+					                            <p class="text-main text-bold">Inline</p>
+					
+					                            <!--Bootstrap Datepicker : Inline-->
+					                            <!--===================================================-->
+					                            <div id="demo-dp-inline">
+					                                <div></div>
+					                            </div>
+					                            <!--===================================================-->
+					
+					                        </div>
+					                    </div>
+					                    <div class="panel">
+					                        <div class="panel-heading">
+					                            <h3 class="panel-title">Switchery</h3>
+					                        </div>
+					                        <div class="panel-body">
+					                            <p>Switchery is a simple component that helps you turn your default HTML checkbox inputs into beautiful iOS 7 style switches in just few simple steps.</p>
+					                            <br>
+					                            <div class="row">
+					                                <div class="col-md-4">
+					
+					                                    <p class="text-main text-bold">Checked</p>
+					
+					                                    <!--Switchery : Checked-->
+					                                    <!--===================================================-->
+					                                    <input id="demo-sw-checked" type="checkbox" checked>
+					                                    <!--===================================================-->
+					
+					                                </div>
+					                                <div class="col-md-4">
+					
+					                                    <p class="text-main text-bold">Uncheked</p>
+					
+					                                    <!--Switchery : Unchecked-->
+					                                    <!--===================================================-->
+					                                    <input id="demo-sw-unchecked" type="checkbox">
+					                                    <!--===================================================-->
+					
+					                                </div>
+					                                <div class="col-md-4">
+					
+					                                    <p class="text-main text-bold">Checking state</p>
+					                                    <div class="box-inline mar-rgt">
+					
+					                                        <!--Switchery : Checked by default-->
+					                                        <!--===================================================-->
+					                                        <input id="demo-sw-checkstate" type="checkbox" checked>
+					                                        <!--===================================================-->
+					
+					                                    </div>
+					
+					                                    <!--Switchery : Checking State Field-->
+					                                    <!--===================================================-->
+					                                    <span id="demo-sw-checkstate-field" class="label label-info"></span>
+					                                    <!--===================================================-->
+					
+					                                </div>
+					                            </div>
+					
+					                            <hr class="new-section-sm bord-no">
+					
+					                            <div class="row">
+					                                <div class="col-md-6">
+					                                    <p class="text-main text-bold">Colored</p>
+					                                    <ul class="list-inline">
+					
+					                                        <!--Switchery : Colored-->
+					                                        <!--===================================================-->
+					                                        <li class="mar-btm">
+					                                            <input id="demo-sw-clr1" type="checkbox" checked>
+					                                        </li>
+					                                        <li class="mar-btm">
+					                                            <input id="demo-sw-clr2" type="checkbox" checked>
+					                                        </li>
+					                                        <li class="mar-btm">
+					                                            <input id="demo-sw-clr3" type="checkbox" checked>
+					                                        </li>
+					                                        <li class="mar-btm">
+					                                            <input id="demo-sw-clr4" type="checkbox" checked>
+					                                        </li>
+					                                        <li class="mar-btm">
+					                                            <input id="demo-sw-clr5" type="checkbox" checked>
+					                                        </li>
+					                                        <li class="mar-btm">
+					                                            <input id="demo-sw-clr6" type="checkbox" checked>
+					                                        </li>
+					                                        <li class="mar-btm">
+					                                            <input id="demo-sw-clr7" type="checkbox" checked>
+					                                        </li>
+					                                        <li class="mar-btm">
+					                                            <input id="demo-sw-clr8" type="checkbox" checked>
+					                                        </li>
+					                                        <!--===================================================-->
+					
+					                                    </ul>
+					                                </div>
+					                                <div class="col-md-6">
+					                                    <p class="text-main text-bold">Sizes</p>
+					                                    <ul class="list-inline">
+					
+					                                        <!--Switchery : Sizes-->
+					                                        <!--===================================================-->
+					                                        <li><input id="demo-sw-sz-lg" type="checkbox" checked></li>
+					                                        <li><input id="demo-sw-sz" type="checkbox" checked></li>
+					                                        <li><input id="demo-sw-sz-sm" type="checkbox" checked></li>
+					                                        <!--===================================================-->
+					
+					                                    </ul>
+					                                </div>
+					                            </div>
+					                        </div>
+					                    </div>
+					                </div>
+					            </div>
+					
+					
+                </div>
+                <!--===================================================-->
+                <!--End page content-->
+
+
+            </div>
+            <!--===================================================-->
+            <!--END CONTENT CONTAINER-->
+
+
+            
+            <!--ASIDE-->
+            <!--===================================================-->
+            <aside id="aside-container">
+                <div id="aside">
+                    <div class="nano">
+                        <div class="nano-content">
+                            
+                            <!--Nav tabs-->
+                            <!--================================-->
+                            <ul class="nav nav-tabs nav-justified">
+                                <li class="active">
+                                    <a href="#demo-asd-tab-1" data-toggle="tab">
+                                        <i class="demo-pli-speech-bubble-7"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#demo-asd-tab-2" data-toggle="tab">
+                                        <i class="demo-pli-information icon-fw"></i> Report
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#demo-asd-tab-3" data-toggle="tab">
+                                        <i class="demo-pli-wrench icon-fw"></i> Settings
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--================================-->
+                            <!--End nav tabs-->
+
+
+
+                            <!-- Tabs Content -->
+                            <!--================================-->
+                            <div class="tab-content">
+
+                                <!--First tab (Contact list)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <div class="tab-pane fade in active" id="demo-asd-tab-1">
+                                    <p class="pad-hor mar-top text-semibold text-main">
+                                        <span class="pull-right badge badge-warning">3</span> Family
+                                    </p>
+
+                                    <!--Family-->
+                                    <div class="list-group bg-trans">
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
+												<i class="badge badge-success badge-stat badge-icon pull-left"></i>
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no">Stephen Tran</p>
+							                    <small class="text-muted">Availabe</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no">Brittany Meyer</p>
+							                    <small class="text-muted">I think so</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
+												<i class="badge badge-info badge-stat badge-icon pull-left"></i>
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no">Jack George</p>
+							                    <small class="text-muted">Last Seen 2 hours ago</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no">Donald Brown</p>
+							                    <small class="text-muted">Lorem ipsum dolor sit amet.</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
+												<i class="badge badge-warning badge-stat badge-icon pull-left"></i>
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no">Betty Murphy</p>
+							                    <small class="text-muted">Idle</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="img/profile-photos/9.png" alt="Profile Picture">
+												<i class="badge badge-danger badge-stat badge-icon pull-left"></i>
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no">Samantha Reid</p>
+							                    <small class="text-muted">Offline</small>
+							                </div>
+							            </a>
+                                    </div>
+
+                                    <hr>
+                                    <p class="pad-hor text-semibold text-main">
+                                        <span class="pull-right badge badge-success">Offline</span> Friends
+                                    </p>
+
+                                    <!--Works-->
+                                    <div class="list-group bg-trans">
+                                        <a href="#" class="list-group-item">
+                                            <span class="badge badge-purple badge-icon badge-fw pull-left"></span> Joey K. Greyson
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <span class="badge badge-info badge-icon badge-fw pull-left"></span> Andrea Branden
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <span class="badge badge-success badge-icon badge-fw pull-left"></span> Johny Juan
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <span class="badge badge-danger badge-icon badge-fw pull-left"></span> Susan Sun
+                                        </a>
+                                    </div>
+
+
+                                    <hr>
+                                    <p class="pad-hor mar-top text-semibold text-main">News</p>
+
+                                    <div class="pad-hor">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetuer
+                                            <a data-title="45%" class="add-tooltip text-semibold" href="#">adipiscing elit</a>, sed diam nonummy nibh. Lorem ipsum dolor sit amet.
+                                        </p>
+                                        <small class="text-muted"><em>Last Update : Des 12, 2014</em></small>
+                                    </div>
+
+
+                                </div>
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--End first tab (Contact list)-->
+
+
+                                <!--Second tab (Custom layout)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <div class="tab-pane fade" id="demo-asd-tab-2">
+
+                                    <!--Monthly billing-->
+                                    <div class="pad-all">
+                                        <p class="text-semibold text-main">Billing &amp; reports</p>
+                                        <p class="text-muted">Get <strong>$5.00</strong> off your next bill by making sure your full payment reaches us before August 5, 2016.</p>
+                                    </div>
+                                    <hr class="new-section-xs">
+                                    <div class="pad-all">
+                                        <span class="text-semibold text-main">Amount Due On</span>
+                                        <p class="text-muted text-sm">August 17, 2016</p>
+                                        <p class="text-2x text-thin text-main">$83.09</p>
+                                        <button class="btn btn-block btn-success mar-top">Pay Now</button>
+                                    </div>
+
+
+                                    <hr>
+
+                                    <p class="pad-hor text-semibold text-main">Additional Actions</p>
+
+                                    <!--Simple Menu-->
+                                    <div class="list-group bg-trans">
+                                        <a href="#" class="list-group-item"><i class="demo-pli-information icon-lg icon-fw"></i> Service Information</a>
+                                        <a href="#" class="list-group-item"><i class="demo-pli-mine icon-lg icon-fw"></i> Usage Profile</a>
+                                        <a href="#" class="list-group-item"><span class="label label-info pull-right">New</span><i class="demo-pli-credit-card-2 icon-lg icon-fw"></i> Payment Options</a>
+                                        <a href="#" class="list-group-item"><i class="demo-pli-support icon-lg icon-fw"></i> Message Center</a>
+                                    </div>
+
+
+                                    <hr>
+
+                                    <div class="text-center">
+                                        <div><i class="demo-pli-old-telephone icon-3x"></i></div>
+                                        Questions?
+                                        <p class="text-lg text-semibold text-main"> (415) 234-53454 </p>
+                                        <small><em>We are here 24/7</em></small>
+                                    </div>
+                                </div>
+                                <!--End second tab (Custom layout)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+                                <!--Third tab (Settings)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <div class="tab-pane fade" id="demo-asd-tab-3">
+                                    <ul class="list-group bg-trans">
+                                        <li class="pad-top list-header">
+                                            <p class="text-semibold text-main mar-no">Account Settings</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="pull-right">
+                                                <input class="toggle-switch" id="demo-switch-1" type="checkbox" checked>
+                                                <label for="demo-switch-1"></label>
+                                            </div>
+                                            <p class="mar-no">Show my personal status</p>
+                                            <small class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="pull-right">
+                                                <input class="toggle-switch" id="demo-switch-2" type="checkbox" checked>
+                                                <label for="demo-switch-2"></label>
+                                            </div>
+                                            <p class="mar-no">Show offline contact</p>
+                                            <small class="text-muted">Aenean commodo ligula eget dolor. Aenean massa.</small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="pull-right">
+                                                <input class="toggle-switch" id="demo-switch-3" type="checkbox">
+                                                <label for="demo-switch-3"></label>
+                                            </div>
+                                            <p class="mar-no">Invisible mode </p>
+                                            <small class="text-muted">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </small>
+                                        </li>
+                                    </ul>
+
+
+                                    <hr>
+
+                                    <ul class="list-group pad-btm bg-trans">
+                                        <li class="list-header"><p class="text-semibold text-main mar-no">Public Settings</p></li>
+                                        <li class="list-group-item">
+                                            <div class="pull-right">
+                                                <input class="toggle-switch" id="demo-switch-4" type="checkbox" checked>
+                                                <label for="demo-switch-4"></label>
+                                            </div>
+                                            Online status
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="pull-right">
+                                                <input class="toggle-switch" id="demo-switch-5" type="checkbox" checked>
+                                                <label for="demo-switch-5"></label>
+                                            </div>
+                                            Show offline contact
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="pull-right">
+                                                <input class="toggle-switch" id="demo-switch-6" type="checkbox" checked>
+                                                <label for="demo-switch-6"></label>
+                                            </div>
+                                            Show my device icon
+                                        </li>
+                                    </ul>
+
+
+
+                                    <hr>
+
+                                    <p class="pad-hor text-semibold text-main mar-no">Task Progress</p>
+                                    <div class="pad-all">
+                                        <p>Upgrade Progress</p>
+                                        <div class="progress progress-sm">
+                                            <div class="progress-bar progress-bar-success" style="width: 15%;"><span class="sr-only">15%</span></div>
+                                        </div>
+                                        <small class="text-muted">15% Completed</small>
+                                    </div>
+                                    <div class="pad-hor">
+                                        <p>Database</p>
+                                        <div class="progress progress-sm">
+                                            <div class="progress-bar progress-bar-danger" style="width: 75%;"><span class="sr-only">75%</span></div>
+                                        </div>
+                                        <small class="text-muted">17/23 Database</small>
+                                    </div>
+
+                                </div>
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--Third tab (Settings)-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!--===================================================-->
+            <!--END ASIDE-->
+
+            
+            <!--MAIN NAVIGATION-->
+            <!--===================================================-->
+            <nav id="mainnav-container">
+                <div id="mainnav">
+
+                    <!--Menu-->
+                    <!--================================-->
+                    <div id="mainnav-menu-wrap">
+                        <div class="nano">
+                            <div class="nano-content">
+
+                                <!--Profile Widget-->
+                                <!--================================-->
+                                <div id="mainnav-profile" class="mainnav-profile">
+                                    <div class="profile-wrap">
+                                        <div class="pad-btm">
+                                            <span class="label label-success pull-right">New</span>
+                                            <img class="img-circle img-sm img-border" src="img/profile-photos/1.png" alt="Profile Picture">
+                                        </div>
+                                        <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
+                                            <span class="pull-right dropdown-toggle">
+                                                <i class="dropdown-caret"></i>
+                                            </span>
+                                            <p class="mnp-name">Aaron Chavez</p>
+                                            <span class="mnp-desc">aaron.cha@themeon.net</span>
+                                        </a>
+                                    </div>
+                                    <div id="profile-nav" class="collapse list-group bg-trans">
+                                        <a href="#" class="list-group-item">
+                                            <i class="demo-pli-male icon-lg icon-fw"></i> View Profile
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="demo-pli-gear icon-lg icon-fw"></i> Settings
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="demo-pli-information icon-lg icon-fw"></i> Help
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="demo-pli-unlock icon-lg icon-fw"></i> Logout
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <!--Shortcut buttons-->
+                                <!--================================-->
+                                <div id="mainnav-shortcut">
+                                    <ul class="list-unstyled">
+                                        <li class="col-xs-3" data-content="My Profile">
+                                            <a class="shortcut-grid" href="#">
+                                                <i class="demo-psi-male"></i>
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3" data-content="Messages">
+                                            <a class="shortcut-grid" href="#">
+                                                <i class="demo-psi-speech-bubble-3"></i>
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3" data-content="Activity">
+                                            <a class="shortcut-grid" href="#">
+                                                <i class="demo-psi-thunder"></i>
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3" data-content="Lock Screen">
+                                            <a class="shortcut-grid" href="#">
+                                                <i class="demo-psi-lock-2"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--================================-->
+                                <!--End shortcut buttons-->
+
+
+                                <ul id="mainnav-menu" class="list-group">
+						
+						            <!--Category name-->
+						            <li class="list-header">Navigation</li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="index.html">
+						                    <i class="demo-psi-home"></i>
+						                    <span class="menu-title">
+												<strong>Dashboard</strong>
+											</span>
+						                </a>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-split-vertical-2"></i>
+						                    <span class="menu-title">
+												<strong>Layouts</strong>
+											</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="layouts-collapsed-navigation.html">Collapsed Navigation</a></li>
+											<li><a href="layouts-offcanvas-navigation.html">Off-Canvas Navigation</a></li>
+											<li><a href="layouts-offcanvas-slide-in-navigation.html">Slide-in Navigation</a></li>
+											<li><a href="layouts-offcanvas-revealing-navigation.html">Revealing Navigation</a></li>
+											<li class="list-divider"></li>
+											<li><a href="layouts-aside-right-side.html">Aside on the right side</a></li>
+											<li><a href="layouts-aside-left-side.html">Aside on the left side</a></li>
+											<li><a href="layouts-aside-dark-theme.html">Dark version of aside</a></li>
+											<li class="list-divider"></li>
+											<li><a href="layouts-fixed-navbar.html">Fixed Navbar</a></li>
+											<li><a href="layouts-fixed-footer.html">Fixed Footer</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="widgets.html">
+						                    <i class="demo-psi-gear-2"></i>
+						                    <span class="menu-title">
+												<strong>Widgets</strong>
+												<span class="pull-right badge badge-warning">24</span>
+											</span>
+						                </a>
+						            </li>
+						
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">Components</li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-boot-2"></i>
+						                    <span class="menu-title">UI Elements</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="ui-buttons.html">Buttons</a></li>
+											<li><a href="ui-panels.html">Panels</a></li>
+											<li><a href="ui-modals.html">Modals</a></li>
+											<li><a href="ui-progress-bars.html">Progress bars</a></li>
+											<li><a href="ui-components.html">Components</a></li>
+											<li><a href="ui-typography.html">Typography</a></li>
+											<li><a href="ui-list-group.html">List Group</a></li>
+											<li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
+											<li><a href="ui-alerts-tooltips.html">Alerts &amp; Tooltips</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li class="active-sub">
+						                <a href="#">
+						                    <i class="demo-psi-pen-5"></i>
+						                    <span class="menu-title">Forms</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse in">
+						                    <li><a href="forms-general.html">General</a></li>
+											<li class="active-link"><a href="forms-components.html">Advanced Components</a></li>
+											<li><a href="forms-validation.html">Validation</a></li>
+											<li><a href="forms-wizard.html">Wizard</a></li>
+											<li><a href="forms-file-upload.html">File Upload</a></li>
+											<li><a href="forms-text-editor.html">Text Editor</a></li>
+											<li><a href="forms-markdown.html">Markdown</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-receipt-4"></i>
+						                    <span class="menu-title">Tables</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="tables-static.html">Static Tables</a></li>
+											<li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
+											<li><a href="tables-datatable.html">Data Tables</a></li>
+											<li><a href="tables-footable.html">Foo Tables</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="charts.html">
+						                    <i class="demo-psi-bar-chart"></i>
+						                    <span class="menu-title">Charts</span>
+						                </a>
+						            </li>
+						
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">More</li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-repair"></i>
+						                    <span class="menu-title">Miscellaneous</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="misc-timeline.html">Timeline</a></li>
+											<li><a href="misc-calendar.html">Calendar</a></li>
+											<li><a href="misc-maps.html">Google Maps</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-mail"></i>
+						                    <span class="menu-title">Email</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="mailbox.html">Inbox</a></li>
+											<li><a href="mailbox-message.html">View Message</a></li>
+											<li><a href="mailbox-compose.html">Compose Message</a></li>
+											<li><a href="mailbox-templates.html">Email Templates<span class="label label-info pull-right">New</span></a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-file-html"></i>
+						                    <span class="menu-title">Pages</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="pages-blank.html">Blank Page</a></li>
+											<li><a href="pages-profile.html">Profile</a></li>
+											<li><a href="pages-search-results.html">Search Results</a></li>
+											<li><a href="pages-faq.html">FAQ</a></li>
+											<li class="list-divider"></li>
+											<li><a href="pages-404.html">404 Error</a></li>
+											<li><a href="pages-500.html">500 Error</a></li>
+											<li class="list-divider"></li>
+											<li><a href="pages-login.html">Login</a></li>
+											<li><a href="pages-register.html">Register</a></li>
+											<li><a href="pages-password-reminder.html">Password Reminder</a></li>
+											<li><a href="pages-lock-screen.html">Lock Screen</a></li>
+											
+						                </ul>
+						            </li>
+
+
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-psi-tactic"></i>
+                                            <span class="menu-title">Menu Level</span>
+                                            <i class="arrow"></i>
+                                        </a>
+
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="#">Second Level Item</a></li>
+                                            <li><a href="#">Second Level Item</a></li>
+                                            <li><a href="#">Second Level Item</a></li>
+                                            <li class="list-divider"></li>
+                                            <li>
+                                                <a href="#">Third Level<i class="arrow"></i></a>
+
+                                                <!--Submenu-->
+                                                <ul class="collapse">
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Third Level<i class="arrow"></i></a>
+
+                                                <!--Submenu-->
+                                                <ul class="collapse">
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li class="list-divider"></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+						
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">Extras</li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-happy"></i>
+						                    <span class="menu-title">Icons Pack</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="icons-ionicons.html">Ion Icons</a></li>
+											<li><a href="icons-themify.html">Themify</a></li>
+											<li><a href="icons-font-awesome.html">Font Awesome</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-medal-2"></i>
+						                    <span class="menu-title">
+												PREMIUM ICONS
+												<span class="label label-danger pull-right">BEST</span>
+											</span>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="premium-line-icons.html">Line Icons Pack</a></li>
+											<li><a href="premium-solid-icons.html">Solid Icons Pack</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="helper-classes.html">
+						                    <i class="demo-psi-inbox-full"></i>
+						                    <span class="menu-title">Helper Classes</span>
+						                </a>
+						            </li>                                </ul>
+
+
+                                <!--Widget-->
+                                <!--================================-->
+                                <div class="mainnav-widget">
+
+                                    <!-- Show the button on collapsed navigation -->
+                                    <div class="show-small">
+                                        <a href="#" data-toggle="menu-widget" data-target="#demo-wg-server">
+                                            <i class="demo-pli-monitor-2"></i>
+                                        </a>
+                                    </div>
+
+                                    <!-- Hide the content on collapsed navigation -->
+                                    <div id="demo-wg-server" class="hide-small mainnav-widget-content">
+                                        <ul class="list-group">
+                                            <li class="list-header pad-no pad-ver">Server Status</li>
+                                            <li class="mar-btm">
+                                                <span class="label label-primary pull-right">15%</span>
+                                                <p>CPU Usage</p>
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar progress-bar-primary" style="width: 15%;">
+                                                        <span class="sr-only">15%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mar-btm">
+                                                <span class="label label-purple pull-right">75%</span>
+                                                <p>Bandwidth</p>
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar progress-bar-purple" style="width: 75%;">
+                                                        <span class="sr-only">75%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="pad-ver"><a href="#" class="btn btn-success btn-bock">View Details</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--================================-->
+                                <!--End widget-->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--================================-->
+                    <!--End menu-->
+
+                </div>
+            </nav>
+            <!--===================================================-->
+            <!--END MAIN NAVIGATION-->
+
+        </div>
+
+        
+
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer">
+
+            <!-- Visible when footer positions are fixed -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="show-fixed pull-right">
+                You have <a href="#" class="text-bold text-main"><span class="label label-danger">3</span> pending action.</a>
+            </div>
+
+
+
+            <!-- Visible when footer positions are static -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="hide-fixed pull-right pad-rgt">
+                14GB of <strong>512GB</strong> Free.
+            </div>
+
+
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <p class="pad-lft">&#0169; 2016 Your Company</p>
+
+
+
+        </footer>
+        <!--===================================================-->
+        <!-- END FOOTER -->
+
+
+        <!-- SCROLL PAGE BUTTON -->
+        <!--===================================================-->
+        <button class="scroll-top btn">
+            <i class="pci-chevron chevron-up"></i>
+        </button>
+        <!--===================================================-->
+
+
+
+    </div>
+    <!--===================================================-->
+    <!-- END OF CONTAINER -->
+
+
+    
+        <!-- SETTINGS - DEMO PURPOSE ONLY -->
+    <!--===================================================-->
+    <div id="demo-set" class="demo-set">
+        <div id="demo-set-body" class="demo-set-body collapse">
+            <div id="demo-set-alert"></div>
+            <div class="pad-hor bord-btm clearfix">
+                <div class="pull-right pad-top">
+                    <button id="demo-btn-close-settings" class="btn btn-trans">
+                        <i class="pci-cross pci-circle icon-lg"></i>
+                    </button>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <i class="demo-pli-gear icon-2x"></i>
+                    </div>
+                    <div class="media-body">
+                        <span class="text-semibold text-lg text-main">Costomize</span>
+                        <p class="text-muted text-sm">Customize Nifty's layout, sidebars, and color schemes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-set-content clearfix">
+                <div class="col-xs-6 col-md-3">
+                    <div class="pad-all bg-gray-light">
+                        <p class="text-semibold text-main text-lg">Layout</p>
+                        <p class="text-semibold text-main">Boxed Layout</p>
+                        <div class="pad-btm">
+                            <div class="pull-right">
+                                <input id="demo-box-lay" class="toggle-switch" type="checkbox">
+                                <label for="demo-box-lay"></label>
+                            </div>
+                            Boxed Layout
+                        </div>
+                        <div class="pad-btm">
+                            <div class="pull-right">
+                                <button id="demo-box-img" class="btn btn-sm btn-trans" disabled><i class="pci-hor-dots"></i></button>
+                            </div>
+                            Background Images <span class="label label-primary">New</span>
+                        </div>
+
+                        <hr class="new-section-xs bord-no">
+                        <p class="text-semibold text-main">Animations</p>
+                        <div class="pad-btm">
+                            <div class="pull-right">
+                                <input id="demo-anim" class="toggle-switch" type="checkbox" checked>
+                                <label for="demo-anim"></label>
+                            </div>
+                            Enable Animations
+                        </div>
+                        <div class="pad-btm">
+                            <div class="select pull-right">
+                                <select id="demo-ease">
+                                    <option value="effect" selected>ease (Default)</option>
+                                    <option value="easeInQuart">easeInQuart</option>
+                                    <option value="easeOutQuart">easeOutQuart</option>
+                                    <option value="easeInBack">easeInBack</option>
+                                    <option value="easeOutBack">easeOutBack</option>
+                                    <option value="easeInOutBack">easeInOutBack</option>
+                                    <option value="steps">Steps</option>
+                                    <option value="jumping">Jumping</option>
+                                    <option value="rubber">Rubber</option>
+                                </select>
+                            </div>
+                            Transitions
+                        </div>
+
+                        <hr class="new-section-xs bord-no">
+
+                        <p class="text-semibold text-main text-lg">Header / Navbar</p>
+                        <div>
+                            <div class="pull-right">
+                                <input id="demo-navbar-fixed" class="toggle-switch" type="checkbox">
+                                <label for="demo-navbar-fixed"></label>
+                            </div>
+                            Fixed Position
+                        </div>
+
+                        <hr class="new-section-xs bord-no">
+
+                        <p class="text-semibold text-main text-lg">Footer</p>
+                        <div class="pad-btm">
+                            <div class="pull-right">
+                                <input id="demo-footer-fixed" class="toggle-switch" type="checkbox">
+                                <label for="demo-footer-fixed"></label>
+                            </div>
+                            Fixed Position
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 pos-rel">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="pad-all">
+                                <p class="text-semibold text-main text-lg">Sidebars</p>
+                                <p class="text-semibold text-main">Navigation</p>
+                                <div class="mar-btm">
+                                    <div class="pull-right">
+                                        <input id="demo-nav-fixed" class="toggle-switch" type="checkbox">
+                                        <label for="demo-nav-fixed"></label>
+                                    </div>
+                                    Fixed Position
+                                </div>
+                                <div class="mar-btm">
+                                    <div class="pull-right">
+                                        <input id="demo-nav-profile" class="toggle-switch" type="checkbox" checked>
+                                        <label for="demo-nav-profile"></label>
+                                    </div>
+                                    Widget Profil <small class="label label-primary">New</small>
+                                </div>
+                                <div class="mar-btm">
+                                    <div class="pull-right">
+                                        <input id="demo-nav-shortcut" class="toggle-switch" type="checkbox" checked>
+                                        <label for="demo-nav-shortcut"></label>
+                                    </div>
+                                    Shortcut Buttons
+                                </div>
+                                <div class="mar-btm">
+                                    <div class="pull-right">
+                                        <input id="demo-nav-coll" class="toggle-switch" type="checkbox">
+                                        <label for="demo-nav-coll"></label>
+                                    </div>
+                                    Collapsed Mode
+                                </div>
+
+                                <div class="clearfix">
+                                    <div class="select pad-btm pull-right">
+                                        <select id="demo-nav-offcanvas">
+                                            <option value="none" selected disabled="disabled">-- Select Mode --</option>
+                                            <option value="push">Push</option>
+                                            <option value="slide">Slide in on top</option>
+                                            <option value="reveal">Reveal</option>
+                                        </select>
+                                    </div>
+                                    Off-Canvas
+                                </div>
+
+                                <p class="text-semibold text-main">Aside</p>
+                                <div class="mar-btm">
+                                    <div class="pull-right">
+                                        <input id="demo-asd-vis" class="toggle-switch" type="checkbox">
+                                        <label for="demo-asd-vis"></label>
+                                    </div>
+                                    Visible
+                                </div>
+                                <div class="mar-btm">
+                                    <div class="pull-right">
+                                        <input id="demo-asd-fixed" class="toggle-switch" type="checkbox" checked>
+                                        <label for="demo-asd-fixed"></label>
+                                    </div>
+                                    Fixed Position
+                                </div>
+                                <div class="mar-btm">
+                                    <div class="pull-right">
+                                        <input id="demo-asd-float" class="toggle-switch" type="checkbox" checked>
+                                        <label for="demo-asd-float"></label>
+                                    </div>
+                                    Floating <span class="label label-primary">New</span>
+                                </div>
+                                <div class="mar-btm">
+                                    <div class="pull-right">
+                                        <input id="demo-asd-align" class="toggle-switch" type="checkbox">
+                                        <label for="demo-asd-align"></label>
+                                    </div>
+                                    Left Side
+                                </div>
+                                <div>
+                                    <div class="pull-right">
+                                        <input id="demo-asd-themes" class="toggle-switch" type="checkbox">
+                                        <label for="demo-asd-themes"></label>
+                                    </div>
+                                    Dark Version
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div id="demo-theme">
+                                <div class="row bg-gray-light pad-top">
+                                    <p class="text-semibold text-main text-lg pad-lft">Color Schemes</p>
+                                    <div class="demo-theme-btn col-md-4 pad-ver">
+                                        <p class="text-semibold text-main">Header</p>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-a-light add-tooltip" data-theme="theme-light" data-type="a" data-title="(A). Light">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-a-navy add-tooltip" data-theme="theme-navy" data-type="a" data-title="(A). Navy Blue">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-a-ocean add-tooltip" data-theme="theme-ocean" data-type="a" data-title="(A). Ocean">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-a-lime add-tooltip" data-theme="theme-lime" data-type="a" data-title="(A). Lime">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-a-purple add-tooltip" data-theme="theme-purple" data-type="a" data-title="(A). Purple">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-a-dust add-tooltip" data-theme="theme-dust" data-type="a" data-title="(A). Dust">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-a-mint add-tooltip" data-theme="theme-mint" data-type="a" data-title="(A). Mint">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-a-yellow add-tooltip" data-theme="theme-yellow" data-type="a" data-title="(A). Yellow">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-a-well-red add-tooltip" data-theme="theme-well-red" data-type="a" data-title="(A). Well Red">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-a-coffee add-tooltip" data-theme="theme-coffee" data-type="a" data-title="(A). Coffee">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-a-prickly-pear add-tooltip" data-theme="theme-prickly-pear" data-type="a" data-title="(A). Prickly pear">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-a-dark add-tooltip" data-theme="theme-dark" data-type="a" data-title="(A). Dark">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="demo-theme-btn col-md-4 pad-ver">
+                                        <p class="text-semibold text-main">Brand</p>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-b-light add-tooltip" data-theme="theme-light" data-type="b" data-title="(B). Light">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-b-navy add-tooltip" data-theme="theme-navy" data-type="b" data-title="(B). Navy Blue">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-b-ocean add-tooltip" data-theme="theme-ocean" data-type="b" data-title="(B). Ocean">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-b-lime add-tooltip" data-theme="theme-lime" data-type="b" data-title="(B). Lime">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-b-purple add-tooltip" data-theme="theme-purple" data-type="b" data-title="(B). Purple">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-b-dust add-tooltip" data-theme="theme-dust" data-type="b" data-title="(B). Dust">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-b-mint add-tooltip" data-theme="theme-mint" data-type="b" data-title="(B). Mint">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-b-yellow add-tooltip" data-theme="theme-yellow" data-type="b" data-title="(B). Yellow">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-b-well-red add-tooltip" data-theme="theme-well-red" data-type="b" data-title="(B). Well red">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-b-coffee add-tooltip" data-theme="theme-coffee" data-type="b" data-title="(B). Coofee">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-b-prickly-pear add-tooltip" data-theme="theme-prickly-pear" data-type="b" data-title="(B). Prickly pear">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-b-dark add-tooltip" data-theme="theme-dark" data-type="b" data-title="(B). Dark">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="demo-theme-btn col-md-4 pad-ver">
+                                        <p class="text-semibold text-main">Navigation</p>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-c-light add-tooltip" data-theme="theme-light" data-type="c" data-title="(C). Light">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-c-navy add-tooltip" data-theme="theme-navy" data-type="c" data-title="(C). Navy Blue">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-c-ocean add-tooltip" data-theme="theme-ocean" data-type="c" data-title="(C). Ocean">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-c-lime add-tooltip" data-theme="theme-lime" data-type="c" data-title="(C). Lime">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-c-purple add-tooltip" data-theme="theme-purple" data-type="c" data-title="(C). Purple">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-c-dust add-tooltip" data-theme="theme-dust" data-type="c" data-title="(C). Dust">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-c-mint add-tooltip" data-theme="theme-mint" data-type="c" data-title="(C). Mint">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-c-yellow add-tooltip" data-theme="theme-yellow" data-type="c" data-title="(C). Yellow">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-c-well-red add-tooltip" data-theme="theme-well-red" data-type="c" data-title="(C). Well Red">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                        <div class="demo-justify-theme">
+                                            <a href="#" class="demo-theme demo-c-coffee add-tooltip" data-theme="theme-coffee" data-type="c" data-title="(C). Coffee">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-c-prickly-pear add-tooltip" data-theme="theme-prickly-pear" data-type="c" data-title="(C). Prickly pear">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                            <a href="#" class="demo-theme demo-c-dark add-tooltip" data-theme="theme-dark" data-type="c" data-title="(C). Dark">
+                                                <div class="demo-theme-brand"></div>
+                                                <div class="demo-theme-head"></div>
+                                                <div class="demo-theme-nav"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="demo-bg-boxed" class="demo-bg-boxed">
+                        <div class="demo-bg-boxed-content">
+                            <p class="text-semibold text-main text-lg mar-no">Background Images</p>
+                            <p class="text-sm text-muted">Add an image to replace the solid background color</p>
+                            <div class="row">
+                                <div class="col-lg-4 text-justify">
+                                    <p class="text-semibold text-main">Blurred</p>
+                                    <div id="demo-blurred-bg" class="text-justify">
+                                        <!--Blurred Backgrounds-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-justify">
+                                    <p class="text-semibold text-main">Polygon &amp; Geometric</p>
+                                    <div id="demo-polygon-bg" class="text-justify">
+                                        <!--Polygon Backgrounds-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-justify">
+                                    <p class="text-semibold text-main">Abstract</p>
+                                    <div id="demo-abstract-bg" class="text-justify">
+                                        <!--Abstract Backgrounds-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-bg-boxed-footer">
+                            <button id="demo-close-boxed-img" class="btn btn-primary">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="demo-set-btn" class="btn" data-toggle="collapse" data-target="#demo-set-body"><i class="demo-psi-gear icon-lg"></i></button>
+    </div>
+    <!--===================================================-->
+    <!-- END SETTINGS -->
+
+
+</body>
+
+<!-- Mirrored from www.themeon.net/nifty/v2.5/forms-components.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Jul 2016 13:45:17 GMT -->
+</html>
